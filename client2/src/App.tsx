@@ -49,7 +49,11 @@ export default function Home() {
         />
       </div>
       <div
-        style={{ display: "flex", justifyContent: "center", paddingTop: "2em" }}
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          paddingTop: "2em",
+        }}
       >
         <img src="logo.svg" width={150} />
       </div>
@@ -64,8 +68,8 @@ export default function Home() {
             <X
               style={{
                 position: "absolute",
-                top: "145",
-                right: "30",
+                top: "138",
+                right: "25",
                 width: "12px",
                 height: "12px",
                 backgroundColor: "lightgray",
@@ -77,7 +81,11 @@ export default function Home() {
 
             <a
               className="ml-2 text-blue-500 underline"
-              style={{ color: "#2b6cb0", cursor: "pointer", fontWeight: "500" }}
+              style={{
+                color: "#2b6cb0",
+                cursor: "pointer",
+                fontWeight: "500",
+              }}
             >
               Try Now
             </a>
@@ -91,46 +99,52 @@ export default function Home() {
         </p>
         <h2 className="assist-title">How can I assist you today?</h2>
         <div className="space-y-2">
-          <div className="tagg">
+          <div className="tagg" style={{ cursor: "pointer" }}>
             Tell me something about the Big Bang so that I can explain it to my
             5-year-old child
           </div>
-          <div className="tagg">
+          <div className="tagg" style={{ cursor: "pointer" }}>
             Please provide me with 10 gift ideas for my friend's birthday
           </div>
-          <div className="tagg">
+          <div className="tagg" style={{ cursor: "pointer" }}>
             Generate five catchy titles for my writing about the use case of
             ChatGPT
           </div>
         </div>
-        <p
-          className={`${hover}`}
-          onMouseOver={handleHover}
-          onMouseLeave={handleMouseUp}
-          style={{ textAlign: "left" }}
-        >
-          <X
-            id="displaybool"
-            style={{
-              position: "absolute",
-              bottom: "185",
-              right: "30",
-              width: "12px",
-              height: "12px",
-              backgroundColor: "lightgray",
-              borderRadius: "100%",
-              padding: "2px",
-              cursor: "pointer",
-              display: "none",
-            }}
-          />
-          Sider starts a new chat each time you reopen the sidebar. If you want
-          to resume the last chat,{" "}
-          <a href="#" className="text-blue-500 underline">
-            change this in the settings
-          </a>
-          .
-        </p>
+        <div style={{ backgroundColor: "#f1f1f1" }}>
+          <p
+            className={`${hover}`}
+            onMouseOver={handleHover}
+            onMouseLeave={handleMouseUp}
+            style={{ textAlign: "left", cursor: "pointer" }}
+          >
+            <X
+              id="displaybool"
+              style={{
+                position: "absolute",
+                bottom: "178px",
+                right: "20px",
+                width: "12px",
+                height: "12px",
+                backgroundColor: "lightgray",
+                borderRadius: "100%",
+                padding: "2px",
+                cursor: "pointer",
+                display: "none",
+              }}
+            />
+            Sider starts a new chat each time you reopen the sidebar. If you
+            want to resume the last chat,{" "}
+            <a
+              href="#"
+              className="text-blue-500"
+              style={{ textDecoration: "none" }}
+            >
+              change this in the settings
+            </a>
+            .
+          </p>
+        </div>
       </div>
       <div
         style={{
@@ -140,14 +154,47 @@ export default function Home() {
         }}
       >
         <div style={{ display: "flex", gap: "10px" }}>
-          <Zap style={{ color: "red", width: "18px", padding: "0px" }} />
-          <Scissors style={{ width: "18px", padding: "0px", color: "gray" }} />
-          <Pin style={{ width: "18px", padding: "0px", color: "gray" }} />
+          <Zap
+            style={{
+              color: "red",
+              width: "18px",
+              padding: "0px",
+              cursor: "pointer",
+            }}
+          />
+          <Scissors
+            style={{
+              width: "18px",
+              padding: "0px",
+              color: "gray",
+              cursor: "pointer",
+            }}
+          />
+          <Pin
+            style={{
+              width: "18px",
+              padding: "0px",
+              color: "gray",
+              cursor: "pointer",
+            }}
+          />
         </div>
         <div style={{ display: "flex", gap: "10px", color: "gray" }}>
-          <Clock9 style={{ width: "18px", padding: "0px", color: "gray" }} />
+          <Clock9
+            style={{
+              width: "18px",
+              padding: "0px",
+              color: "gray",
+              cursor: "pointer",
+            }}
+          />
           <MessageSquarePlus
-            style={{ width: "18px", padding: "0px", color: "lightgreen" }}
+            style={{
+              width: "18px",
+              padding: "0px",
+              color: "lightgreen",
+              cursor: "pointer",
+            }}
           />
         </div>
       </div>
@@ -175,10 +222,20 @@ export default function Home() {
         >
           <div style={{ display: "flex", gap: "10px" }}>
             <WandSparkles
-              style={{ width: "18px", padding: "0px", color: "#4299e1" }}
+              style={{
+                width: "18px",
+                padding: "0px",
+                color: "#4299e1",
+                cursor: "pointer",
+              }}
             />
             <AtSign
-              style={{ width: "18px", padding: "0px", color: "#4299e1" }}
+              style={{
+                width: "18px",
+                padding: "0px",
+                color: "#4299e1",
+                cursor: "pointer",
+              }}
             />
             <div
               style={{
@@ -190,13 +247,19 @@ export default function Home() {
                 borderRadius: "20px",
                 alignItems: "center",
                 color: "lightgray",
+                cursor: "pointer",
               }}
             >
-              <Plus style={{ width: "15px" }} /> Add Tools
+              <Plus style={{ width: "15px", cursor: "pointer" }} /> Add Tools
             </div>
           </div>
           <SendHorizonal
-            style={{ width: "18px", padding: "0px", color: "#4299e1" }}
+            style={{
+              width: "18px",
+              padding: "0px",
+              color: "#4299e1",
+              cursor: "pointer",
+            }}
           />{" "}
         </div>
       </div>
